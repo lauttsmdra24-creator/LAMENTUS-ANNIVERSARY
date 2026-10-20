@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lamentus Anniversary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="clouds" aria-hidden="true"></div>
+<div id="flash"></div>
+
+<main id="app">
+
+  <!-- PAGE 1 -->
+  <section class="page active" id="p1">
+    <div class="frame">
+      <div class="sparks" aria-hidden="true"></div><div class="ice l"></div><div class="ice r"></div>
+      <h1 class="cloud-title">LAMENTUS</h1>
+      <h2 class="subtitle">ANNIVERSARY</h2>
+      <button id="playBtn" class="play" aria-label="Play"><span></span></button>
+      <p class="by">by: eternityll0ve</p>
+    </div>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page" id="p2">
+    <div class="panel">
+      <h2 class="q">WHOSE ANNIVERSARY IS THIS?</h2>
+      <div class="pw" id="pwBox">
+        <span class="lock"></span>
+        <input id="pwInput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="password">
+      </div>
+      <p class="hint">hint: they are very talented and cool</p>
+      <p class="err" id="pwErr"></p>
+      <button id="loginBtn" class="btn-blue">LOGIN</button>
+    </div>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page" id="p3">
+    <div class="portal-scene">
+      <p class="portal-title">open this portal</p>
+      <canvas id="portal" width="44" height="60"></canvas>
+      <div class="console">
+        <div class="leds" id="leds"></div>
+        <div class="pbtns" id="pbtns"></div>
+        <div class="lever-wrap">
+          <div class="track" id="track"><div class="knob" id="knob"></div></div>
+        </div>
+      </div>
+      <p class="status" id="status">PRESS THE BUTTONS: ALL LIGHTS MUST BE GREEN</p>
+    </div>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="page" id="p4">
+    <div class="panel pop">
+      <h2 class="q">DO YOU WANT TO GO TO THE NEXT DESTINATION?</h2>
+      <div class="choices" id="choices4">
+        <button class="chip no" id="no4"><i>✕</i>NO</button>
+        <button class="chip yes" id="yes4"><i>✓</i>YES</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 5 -->
+  <section class="page" id="p5">
+    <div class="panel pop">
+      <h2 class="q">BUT BEFORE THAT, DO YOU LOVE LAMENTUS?</h2>
+      <div class="choices row" id="choices5">
+        <button class="chip no big" id="noA"><i>✕</i>NO</button>
+        <button class="chip no big" id="noB"><i>✕</i>NO</button>
+        <button class="chip yes hidden" id="yes5"><i>✓</i>YES</button>
+      </div>
+      <p class="tease" id="tease"></p>
+    </div>
+  </section>
+
+  <!-- PAGE 6 -->
+  <section class="page" id="p6">
+    <div class="sparks" aria-hidden="true"></div>
+    <div class="env-holder" id="env6"></div>
+    <p class="tap-hint" id="tapHint">TAP THE LETTER!</p>
+  </section>
+
+  <!-- PAGE 7 -->
+  <section class="page" id="p7">
+    <div class="glow"></div><div class="rays"></div><div class="hearts" id="hearts"></div>
+    <div class="sparks" aria-hidden="true"></div>
+    <div class="env-holder opened" id="env7"></div>
+    <button id="homeBtn" class="btn-blue home">BACK TO HOME</button>
+  </section>
+
+</main>
+
+<canvas id="confetti"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
